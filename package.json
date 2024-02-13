@@ -10,8 +10,10 @@
     "node": ">=16"
   },
   "scripts": {
+    "preinstall":"echo This is the pre install step",
     "test": "node bin/grunt test",
-    "test-tap": "node bin/grunt test:tap"
+    "test-tap": "node bin/grunt test:tap",
+    "postinstall":"echo This is the post install step"
   },
   "main": "lib/grunt",
   "bin": {
